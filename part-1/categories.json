@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Пестициды",
+    "img": "./img/categories/пестициды.svg",
+    "hover_img": "./img/categories/пестициды_hover.svg"
+  },
+  {
+    "title": "Культуры",
+    "img": "./img/categories/культуры.svg",
+    "hover_img": "./img/categories/культуры_hover.svg"
+  },
+  {
+    "title": "Вредители",
+    "img": "./img/categories/вредители.svg",
+    "hover_img": "./img/categories/вредители_hover.svg"
+  },
+  {
+    "title": "Действующие вещества",
+    "img": "./img/categories/substances.svg",
+    "hover_img": "./img/categories/substances_hover.svg"
+  }
+]

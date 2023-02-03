@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Impact";
+  src: url("../fonts/impact.ttf");
+}
+
+body {
+  position: relative;
+}
+
+.main {
+  padding-top: 50px;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.title {
+  position: relative;
+}
+
+.title-text {
+  font-family: "Impact", sans-serif;
+  font-weight: normal;
+  line-height: 1.2975;
+  position: relative;
+  margin-bottom: 20px;
+  width: fit-content;
+  z-index: 1;
+}
+
+.title-text::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background: #ffcc01;
+  bottom: -8px;
+  left: 0;
+  border-radius: 99px;
+}
+
+.green-leaf {
+  top: -40px;
+  left: -20px;
+}
+
+.categories {
+  display: grid;
+  row-gap: 32px;
+}
+
+.categories__item {
+  border: 2px solid #79c800;
+  box-shadow: 0px 4px 16px 0px #00000040;
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  position: relative;
+  min-height: 188px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.categories__item:hover {
+  background-color: rgba(121, 200, 0, 0.4);
+}
+
+.category__title {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: -1px;
+  font-size: 16px;
+  line-height: 1.171;
+  width: 50%;
+  color: #201714;
+}
+
+.category__img,
+.category__img-hover {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+
+.category__img-hover {
+  display: none;
+}
+
+.category__ellipse {
+  visibility: hidden;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transition: left 3s linear, top 3s linear;
+}
+
+.category:hover .category__ellipse {
+  visibility: visible;
+}
+
+.ellipse-big {
+  width: 113px;
+  height: 113px;
+}
+
+.ellipse-medium {
+  width: 75px;
+  height: 75px;
+}
+
+.ellipse-small {
+  width: 45px;
+  height: 45px;
+}
+
+.decor-img {
+  position: absolute;
+  z-index: -1;
+  width: 75px;
+}
+
+.sun {
+  top: -100px;
+  right: 0;
+  width: 150px;
+}
+
+.brown-leaf {
+  top: 250px;
+  left: 70%;
+  margin-right: -50%;
+  transform: translateX(-50%);
+}
+
+.decor-1 {
+  top: -10px;
+  left: 40%;
+  margin-right: -50%;
+  transform: translateX(-50%);
+}
+
+.decor-2 {
+  bottom: 0;
+  left: 0;
+}
